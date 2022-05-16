@@ -50,13 +50,6 @@
          </div>
       </section>
 
-      <!-- Main Carousel -->
-      <section class="grid">
-      <div id="header-carousel" class="s-12 owl-carousel owl-theme margin-bottom">
-         <div class="item"><img src="img/18.png" alt=""></div>
-      </div>  
-      </section>
-
       <!-- BLURB 1 -->
       <section class="grid box margin-bottom">
          <div class="s-12 text-center margin-bottom">
@@ -64,35 +57,34 @@
            <p>Maybe talk about what project is all about?</p>
          </div>
       </section>  
-       
-      
-        <!-- tree demo -->
-        <section class="grid box margin-bottom">
-          <div class="s-12 text-center margin-bottom">
-            <h3>Tree evolution</h3>
-          
-          <video class = "m-12 l-12 center text-center" controls>
-            <source src="demomp4_Trim.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <i>*trees are growing at 30x the normal speed for sake of demonstration</i>
-          </div>
+         
+         <!-- VIDEO CAROUSEL  -->
+         <section class="grid">
+          <!-- Main Carousel -->
+          <div id="header-carousel" class="s-12 owl-carousel owl-theme margin-bottom">
+
+          	<div class="item"> 
+              <div class="s-12 text-center margin-bottom">
+                <h3>Tree evolution</h3>
+                <i>*trees are growing at 30x the normal speed for sake of demonstration</i>
+                <video class = "m-12 l-12 center text-center" controls>
+                <source src="demomp4_Trim.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <div class="item"> 
+              <div class="s-12 text-center margin-bottom">
+                <h3>Sheep pathfinding and grazing</h3>
+                <video class = "m-12 l-12 center text-center" controls>
+                <source src="giant sheep.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              </div>
+          </div>  
         </section>
 
-         <!-- sheep demo -->
-         <section class="grid box margin-bottom">
-          <div class="s-12 text-center margin-bottom">
-            <h3>Sheep pathfinding and grazing</h3>
-          
-          <video class = "m-12 l-12 center text-center" controls>
-            <source src="giant sheep.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          </div>
-        </section>
-         
-                   
-         
          <!-- SECTION 2 -->
         <section class="grid margin">
           <div class="s-12 l-4 box margin-bottom">
@@ -123,7 +115,7 @@
             items: 1,
             loop: true,
             navText: ["&#xf007","&#xf006"],
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 3000
           });
           var owl = $('#gallery-carousel');
